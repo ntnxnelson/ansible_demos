@@ -1,4 +1,4 @@
 --- 
 collections:
 - name: nutanix.ncp
-  source: https://galaxy.ansible.com
+  source: https://github.com/nutanix/nutanix.ansible
