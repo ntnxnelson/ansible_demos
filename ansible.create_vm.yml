@@ -11,6 +11,16 @@
       nutanix_password: "{{ pc_password }}"
       validate_certs: false
   tasks:
+  - name: Setting Variables
+    set_fact:
+        vm_name: ""
+        cluster_name: ""
+        script_path: ""
+        subnet_name: ""
+        image_name: ""
+        password: ""
+        fqdn: ""
+
   - name: Create Cloud-init Script file
     copy:
       dest: "cloud_init.yml"
