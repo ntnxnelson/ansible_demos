@@ -31,6 +31,7 @@
             - name: nutanix
               shell: /bin/bash
               homedir: /home/nutanix
+              
               sudo: ['ALL=(ALL) NOPASSWD:ALL']
 
           # Change root default password in image
