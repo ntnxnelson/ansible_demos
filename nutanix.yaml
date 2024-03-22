@@ -5,8 +5,8 @@ nutanix_password: "{{ pc_password }}"
 validate_certs: false
 data: {"offset": 0, "length": 1000}
 groups:
-  #group_1: "'<name_prefix>' in name"
-  #group_2: "'<vm_name>'==name"
+  group_1: "'<name_prefix>' in name"
+  group_2: "'<vm_name>'==name"
 keyed_groups:
   - prefix: "host"
     separator: ':'
