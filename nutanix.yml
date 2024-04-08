@@ -9,5 +9,5 @@ groups:
   group_2: "'autoad'==name"
 keyed_groups:
   - prefix: "host"
-    separator: ':'
+    separator: ":""
     key: "ansible_host"
