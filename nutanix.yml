@@ -1,8 +1,4 @@
 plugin: nutanix.ncp.ntnx_prism_vm_inventory
-nutanix_hostname: "10.38.64.39"
-nutanix_username: "tower_test"
-nutanix_password: "Nutanix/4u!"
-validate_certs: false
 data: {"offset": 0, "length": 1000}
 groups:
   Jenkins_Servers: "'jenkins' in name"
