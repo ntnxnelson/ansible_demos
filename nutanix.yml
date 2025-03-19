@@ -1,9 +1,2 @@
 plugin: nutanix.ncp.ntnx_prism_vm_inventory
 data: {"offset": 0, "length": 1000}
-groups:
-  Jenkins_Servers: "'jenkins' in name"
-  NKE_Nodes: "'karbon' in name"
-keyed_groups:
-  - prefix: "host"
-    separator: ":"
-    key: "ansible_host"
