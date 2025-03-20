@@ -3,3 +3,4 @@ data: {"offset": 0, "length": 1000}
 groups:
   nginx_vms: "'nginx' in name"
   nodejs_vms: "'nodejs' in name"
+  nginx332: "'nginx' AND '332' in name"
