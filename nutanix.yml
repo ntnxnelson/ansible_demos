@@ -1,5 +1,5 @@
 plugin: nutanix.ncp.ntnx_prism_vm_inventory
-data: {"filter": "guest_os_version==linux:64:Rocky Linux-9.5"}
+data: {"filter": "guest_tools.nutanix_guest_tools.guest_os_version==linux:64:Rocky Linux-9.5"}
 groups:
   nginx_vms: "'nginx' in name"
   nodejs_vms: "'nodejs' in name"
