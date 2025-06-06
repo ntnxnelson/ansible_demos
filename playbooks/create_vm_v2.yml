@@ -27,7 +27,7 @@
         cloud_init_script: "I2Nsb3VkLWNvbmZpZwp1c2VyczoKICAtIG5hbWU6IGJ1aWxkZXIKICAgIHN1ZG86IFsnQUxMPShBTEwpIE5PUEFTU1dEOkFMTCddCmNocGFzc3dkOgogIGxpc3Q6IHwKICAgIGJ1aWxkZXI6cGFja2VyCiAgZXhwaXJlOiBGYWxzZQpzc2hfcHdhdXRoOiBUcnVlCg=="
 
 
-    - name: Create VM with 20GB disk and configured for UEFI boot
+    - name: Create VM configured for UEFI boot
       nutanix.ncp.ntnx_vms_v2:
         name: "{{ vm_name }}"
         description: ansible test
