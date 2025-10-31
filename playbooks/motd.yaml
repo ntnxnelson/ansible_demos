@@ -1,6 +1,6 @@
 ---
 - name: Deploy motd file
-  hosts: all
+  hosts: linux
   become: true
   tasks:
     - template:
