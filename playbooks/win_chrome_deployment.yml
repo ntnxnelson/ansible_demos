@@ -1,10 +1,14 @@
 - hosts: windows
   gather_facts: no
   tasks:
-  - name: Copy the bundle.zip
-    win_copy:
-      src: GoogleChromeEnterpriseBundle64.zip
-      dest: C:\\Temp\\
+  - name: Download the bundle.zip
+    win_get_url:
+      url: https://dl.google.com/tag/s/appguid%3D%7B8A69D345-D564-463C-AFF1-A69D9E530F96%7D%26iid%3D%7BFA9CC11D-E2C1-41AD-90C7-4C77B3FC277F%7D%26browser%3D4%26usagestats%3D1%26appname%3DGoogle%2520Chrome%26needsadmin%3Dtrue%26ap%3Dx64-stable-statsdef_0%26brand%3DGCEB/dl/chrome/install/GoogleChromeEnterpriseBundle64.zip
+      dest: C:\\Temp\\GoogleChromeEnterpriseBundle64.zip
+      register: download_chrome
+      until: download_chrome is succeeded
+      retries: 10
+      delay: 2
 
   - name: Extract the bundle
     win_unzip:
